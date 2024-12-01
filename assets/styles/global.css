@@ -1,0 +1,164 @@
+/* assets/styles/global.css */
+.accordion-button {
+  background-color: transparent !important; /* Убираем серый фон */
+  color: inherit !important; /* Оставляем цвет текста, заданный темой */
+  box-shadow: none !important; /* Убираем тень */
+  border: none !important; /* Убираем рамку */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important; /* Убираем фон при открытии */
+  color: inherit !important;
+}
+
+.accordion-button[disabled] {
+  background-color: transparent !important; /* Прозрачный фон для отключённых */
+  color: #aaa !important; /* Светло-серый текст */
+  cursor: not-allowed; /* Указываем недоступность */
+}
+
+.accordion-collapse {
+  background-color: transparent !important; /* Убираем фон для контента */
+}
+
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .pointer{
+    cursor: pointer;
+  }
+/* Переопределение переменных для светлой темы */
+.light-theme {
+  --bs-body-bg: white;
+  --bs-body-color: #000;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-border-color: #dee2e6;
+}
+
+/* Переопределение переменных для темной темы */
+.dark-theme {
+  --bs-body-bg: rgba(9, 21, 32, 1);
+  --bs-body-color: #ffffff;
+  --bs-primary: #1f77d0;
+  --bs-secondary: #404b56;
+  --bs-success: #28a745;
+  --bs-info: #39a2db;
+  --bs-warning: #ffcc00;
+  --bs-danger: #e53935;
+  --bs-light: #2e3b4e;
+  --bs-dark: #171f29;
+  --bs-border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Переопределение модальных окон */
+.dark-theme .modal-content {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.dark-theme .modal-header {
+  background-color: var(--bs-dark);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.dark-theme .modal-footer {
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.dark-theme .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Другие кастомизации, если необходимо */
+.dark-theme .accordion-button {
+  background-color: var(--bs-dark);
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-border-color);
+}
+
+.dark-theme .accordion-button:not(.collapsed) {
+  background-color: var(--bs-secondary);
+}
+.btn-danger1 {
+  margin: 2px;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px 9px;
+  border: 2px solid cornflowerblue;
+  border-radius: 17px;
+   background: linear-gradient(135deg,#123c63 0%,#0a243d 50%, #291919 100%); 
+  background-size: 200% 200%;
+  animation: marbleGradientAnimation 5s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-danger1:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: perspective(500px) translateZ(20px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8), inset 0px -3px 12px rgba(255, 255, 255, 0.2);
+}
+.btn-danger2 {
+  margin: 5px;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px 9px;
+  border: 2px solid orange;
+  border-radius: 17px;
+  background: linear-gradient(135deg,#123c63 0%,#0a243d 50%, #291919 100%);
+  background-size: 200% 200%;
+  animation: marbleGradientAnimation 5s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-danger2:hover {
+  transform: perspective(500px) translateZ(20px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8), inset 0px -3px 12px rgba(255, 255, 255, 0.2);
+}
+.btn-danger {
+  margin: 5px;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 3px 12px;
+  border: 2px solid rgb(255, 55, 0);
+  border-radius: 17px;
+  background: linear-gradient(135deg,#123c63 0%,#0a243d 50%, #291919 100%);
+  background-size: 200% 200%;
+  animation: marbleGradientAnimation 5s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  .btn-danger:hover {
+  transform: perspective(500px) translateZ(20px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8), inset 0px -3px 12px rgba(255, 255, 255, 0.2);
+}
+  .btn-danger3 {
+  margin: 5px;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px 9px;
+   border: 2px solid cornflowerblue;
+  border-radius: 17px;
+  background: linear-gradient(135deg,#123c63 0%,#0a243d 50%, #291919 100%);
+  background-size: 200% 200%;
+  animation: marbleGradientAnimation 5s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  .btn-danger3:hover {
+  transform: perspective(500px) translateZ(20px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8), inset 0px -3px 12px rgba(255, 255, 255, 0.2);
+}
+
+  
