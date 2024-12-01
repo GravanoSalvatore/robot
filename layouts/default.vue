@@ -8,7 +8,7 @@
             src="https://cdn.pixabay.com/photo/2016/12/13/21/20/alien-1905155_640.png"
             style="width: 50px"
           /> -->
-          4VROBOT<i class="bi bi-telegram"></i>N</h5>
+          4VROBОT<i class="bi bi-telegram"></i>N</h5>
          
           
       </NuxtLink>
