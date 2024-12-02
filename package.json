@@ -14,7 +14,8 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "nuxt": "^3.14.1592",
-    "vue": "latest",
+    "pinia": "^2.2.8",
+    "vue": "^3.5.13",
     "vue-device-detector": "^1.1.6",
     "vue-router": "latest"
   }
